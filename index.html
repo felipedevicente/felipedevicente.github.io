@@ -3,156 +3,217 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Felipe De Vicente - Gallery</title>
+  <title>Felipe De Vicente - Abstract Art & Music</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
   <style>
     body {
       font-family: Arial, sans-serif;
-      max-width: 900px;
-      margin: 20px auto;
-      padding: 0 10px;
-      background: #fff;
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #fff;
       color: #222;
     }
+
     h1 {
       text-align: center;
       margin-bottom: 40px;
       font-weight: 700;
+      font-size: 2.2em;
     }
+
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+
     .gallery-item {
-      display: inline-block;
-      margin: 10px;
       text-align: center;
-      width: 180px;
-      vertical-align: top;
+      width: 200px;
     }
+
     .gallery-item img {
-      width: 180px;
+      width: 100%;
       height: auto;
       cursor: pointer;
-      border: 2px solid #ccc;
       border-radius: 6px;
+      border: 2px solid #ccc;
       transition: border-color 0.3s ease;
     }
+
     .gallery-item img:hover {
-      border-color: #555;
+      border-color: #000;
     }
+
+    .gallery-item h3 {
+      margin-top: 10px;
+      font-size: 1em;
+    }
+
     a.store-link,
     a.spotify-link {
       display: block;
-      margin-top: 8px;
       font-size: 0.9em;
-      color: #0066cc;
+      margin-top: 4px;
+      color: #0077cc;
       text-decoration: none;
     }
+
     a.store-link:hover,
     a.spotify-link:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      margin-top: 60px;
+      text-align: center;
+      font-size: 0.9em;
+      color: #666;
+      border-top: 1px solid #ddd;
+      padding-top: 20px;
+    }
+
+    footer a {
+      color: #0077cc;
+      margin: 0 10px;
+      text-decoration: none;
+    }
+
+    footer a:hover {
       text-decoration: underline;
     }
   </style>
 </head>
 <body>
 
-  <h1>Felipe De Vicente - Gallery</h1>
+  <h1>Felipe De Vicente - Abstract Art & Music</h1>
 
-  <div class="gallery-item">
-    <a href="https://i.postimg.cc/Vr1R6nkP/ART-131.jpg" class="glightbox" data-gallery="felipe" data-title="ART 131">
-      <img src="https://i.postimg.cc/Vr1R6nkP/ART-131.jpg" alt="ART 131" />
-    </a>
-    <h3>ART 131</h3>
-    <a href="https://felipedevicente.lojaintegrada.com.br/obra-de-arte-art-131" target="_blank" class="store-link">View in store</a>
-    <a href="https://open.spotify.com/track/7BDCnmb5qs7rvLnFBY0ofz" target="_blank" class="spotify-link">Listen on Spotify</a>
+  <div class="gallery">
+
+    <!-- ART 131 -->
+    <div class="gallery-item">
+      <a href="https://i.postimg.cc/Vr1R6nkP/ART-131.jpg" class="glightbox" data-gallery="art" data-title="ART 131">
+        <img src="https://i.postimg.cc/Vr1R6nkP/ART-131.jpg" alt="ART 131" />
+      </a>
+      <h3>ART 131</h3>
+      <a class="store-link" href="https://felipedevicente.lojaintegrada.com.br/obra-de-arte-art-131" target="_blank">View in store</a>
+      <a class="spotify-link" href="https://open.spotify.com/track/7BDCnmb5qs7rvLnFBY0ofz" target="_blank">Listen on Spotify</a>
+    </div>
+
+    <!-- ART 134 -->
+    <div class="gallery-item">
+      <a href="https://i.postimg.cc/xkL5ntYP/ART-134.jpg" class="glightbox" data-gallery="art" data-title="ART 134">
+        <img src="https://i.postimg.cc/xkL5ntYP/ART-134.jpg" alt="ART 134" />
+      </a>
+      <h3>ART 134</h3>
+      <a class="store-link" href="https://felipedevicente.lojaintegrada.com.br/obra-de-arte-art-134" target="_blank">View in store</a>
+      <a class="spotify-link" href="https://open.spotify.com/track/3ybOwTSfb6sZ8ldt0auC9O" target="_blank">Listen on Spotify</a>
+    </div>
+
+    <!-- ART 136 -->
+    <div class="gallery-item">
+      <a href="https://i.postimg.cc/kRgvNCSj/ART-136.jpg" class="glightbox" data-gallery="art" data-title="ART 136">
+        <img src="https://i.postimg.cc/kRgvNCSj/ART-136.jpg" alt="ART 136" />
+      </a>
+      <h3>ART 136</h3>
+      <a class="store-link" href="https://felipedevicente.lojaintegrada.com.br/obra-de-arte-art-136" target="_blank">View in store</a>
+      <a class="spotify-link" href="https://open.spotify.com/track/0cA0wYxheiBkEJAdAzaNSS" target="_blank">Listen on Spotify</a>
+    </div>
+
+    <!-- ART 146 -->
+    <div class="gallery-item">
+      <a href="https://i.postimg.cc/qhLGCqNh/ART-146.jpg" class="glightbox" data-gallery="art" data-title="ART 146">
+        <img src="https://i.postimg.cc/qhLGCqNh/ART-146.jpg" alt="ART 146" />
+      </a>
+      <h3>ART 146</h3>
+      <a class="store-link" href="https://felipedevicente.lojaintegrada.com.br/obra-de-arte-art-146" target="_blank">View in store</a>
+      <a class="spotify-link" href="https://open.spotify.com/track/1E882GAeT5L78lbth6DoFm" target="_blank">Listen on Spotify</a>
+    </div>
+
+    <!-- ART 153 -->
+    <div class="gallery-item">
+      <a href="https://i.postimg.cc/nCM1CHpr/ART-153.jpg" class="glightbox" data-gallery="art" data-title="ART 153">
+        <img src="https://i.postimg.cc/nCM1CHpr/ART-153.jpg" alt="ART 153" />
+      </a>
+      <h3>ART 153</h3>
+      <a class="store-link" href="https://felipedevicente.lojaintegrada.com.br/obra-de-arte-art-153" target="_blank">View in store</a>
+      <a class="spotify-link" href="https://open.spotify.com/track/57Ulv9j5OdcwKfNPS5wmUF" target="_blank">Listen on Spotify</a>
+    </div>
+
+    <!-- ART 154 -->
+    <div class="gallery-item">
+      <a href="https://i.postimg.cc/RqSdx7Yc/ART-154.jpg" class="glightbox" data-gallery="art" data-title="ART 154">
+        <img src="https://i.postimg.cc/RqSdx7Yc/ART-154.jpg" alt="ART 154" />
+      </a>
+      <h3>ART 154</h3>
+      <a class="store-link" href="https://felipedevicente.lojaintegrada.com.br/obra-de-arte-art-154" target="_blank">View in store</a>
+      <a class="spotify-link" href="https://open.spotify.com/track/07I4x6u14o5wlWeA7mlQ33" target="_blank">Listen on Spotify</a>
+    </div>
+
+    <!-- ART 155 -->
+    <div class="gallery-item">
+      <a href="https://i.postimg.cc/xc73mW1R/ART-155.jpg" class="glightbox" data-gallery="art" data-title="ART 155">
+        <img src="https://i.postimg.cc/xc73mW1R/ART-155.jpg" alt="ART 155" />
+      </a>
+      <h3>ART 155</h3>
+      <a class="store-link" href="https://felipedevicente.lojaintegrada.com.br/obra-de-arte-art-155" target="_blank">View in store</a>
+      <a class="spotify-link" href="https://open.spotify.com/track/0B0bxsbomrPwoJH7w2Ky7o" target="_blank">Listen on Spotify</a>
+    </div>
+
+    <!-- ART 172 -->
+    <div class="gallery-item">
+      <a href="https://i.postimg.cc/V5KRfSy2/ART-172.jpg" class="glightbox" data-gallery="art" data-title="ART 172">
+        <img src="https://i.postimg.cc/V5KRfSy2/ART-172.jpg" alt="ART 172" />
+      </a>
+      <h3>ART 172</h3>
+      <a class="store-link" href="https://felipedevicente.lojaintegrada.com.br/obra-de-arte-art-172" target="_blank">View in store</a>
+      <a class="spotify-link" href="https://open.spotify.com/track/0e0oVvZEimSmxIk1cPs5fq" target="_blank">Listen on Spotify</a>
+    </div>
+
+    <!-- ART 173 -->
+    <div class="gallery-item">
+      <a href="https://i.postimg.cc/jW6HG2Qg/ART-173.jpg" class="glightbox" data-gallery="art" data-title="ART 173">
+        <img src="https://i.postimg.cc/jW6HG2Qg/ART-173.jpg" alt="ART 173" />
+      </a>
+      <h3>ART 173</h3>
+      <a class="store-link" href="https://felipedevicente.lojaintegrada.com.br/obra-de-arte-art-173" target="_blank">View in store</a>
+      <a class="spotify-link" href="https://open.spotify.com/track/6wTxkhLFa9nMlJLec5NTNZ" target="_blank">Listen on Spotify</a>
+    </div>
+
+    <!-- ART 174 -->
+    <div class="gallery-item">
+      <a href="https://i.postimg.cc/061GWDmK/ART-174.jpg" class="glightbox" data-gallery="art" data-title="ART 174">
+        <img src="https://i.postimg.cc/061GWDmK/ART-174.jpg" alt="ART 174" />
+      </a>
+      <h3>ART 174</h3>
+      <a class="store-link" href="https://felipedevicente.lojaintegrada.com.br/obra-de-arte-art-174" target="_blank">View in store</a>
+      <a class="spotify-link" href="https://open.spotify.com/track/3Lt3jZWINViUuPWY2daypN" target="_blank">Listen on Spotify</a>
+    </div>
+
+    <!-- SELF PORTRAIT -->
+    <div class="gallery-item">
+      <a href="https://i.postimg.cc/752MnmCy/Self-Portrait.jpg" class="glightbox" data-gallery="art" data-title="Self-Portrait">
+        <img src="https://i.postimg.cc/752MnmCy/Self-Portrait.jpg" alt="Self-Portrait" />
+      </a>
+      <h3>Self-Portrait</h3>
+      <a class="store-link" href="https://felipedevicente.lojaintegrada.com.br/obra-de-arte-self-portrait" target="_blank">View in store</a>
+      <a class="spotify-link" href="https://open.spotify.com/album/3Ryk0ACkKZb3XmLEGVz2Kk" target="_blank">Listen to the full album</a>
+    </div>
+
   </div>
 
-  <div class="gallery-item">
-    <a href="https://i.postimg.cc/xkL5ntYP/ART-134.jpg" class="glightbox" data-gallery="felipe" data-title="ART 134">
-      <img src="https://i.postimg.cc/xkL5ntYP/ART-134.jpg" alt="ART 134" />
-    </a>
-    <h3>ART 134</h3>
-    <a href="https://felipedevicente.lojaintegrada.com.br/obra-de-arte-art-134" target="_blank" class="store-link">View in store</a>
-    <a href="https://open.spotify.com/track/3ybOwTSfb6sZ8ldt0auC9O" target="_blank" class="spotify-link">Listen on Spotify</a>
-  </div>
-
-  <div class="gallery-item">
-    <a href="https://i.postimg.cc/kRgvNCSj/ART-136.jpg" class="glightbox" data-gallery="felipe" data-title="ART 136">
-      <img src="https://i.postimg.cc/kRgvNCSj/ART-136.jpg" alt="ART 136" />
-    </a>
-    <h3>ART 136</h3>
-    <a href="https://felipedevicente.lojaintegrada.com.br/obra-de-arte-art-136" target="_blank" class="store-link">View in store</a>
-    <a href="https://open.spotify.com/track/0cA0wYxheiBkEJAdAzaNSS" target="_blank" class="spotify-link">Listen on Spotify</a>
-  </div>
-
-  <div class="gallery-item">
-    <a href="https://i.postimg.cc/qhLGCqNh/ART-146.jpg" class="glightbox" data-gallery="felipe" data-title="ART 146">
-      <img src="https://i.postimg.cc/qhLGCqNh/ART-146.jpg" alt="ART 146" />
-    </a>
-    <h3>ART 146</h3>
-    <a href="https://felipedevicente.lojaintegrada.com.br/obra-de-arte-art-146" target="_blank" class="store-link">View in store</a>
-    <a href="https://open.spotify.com/track/1E882GAeT5L78lbth6DoFm" target="_blank" class="spotify-link">Listen on Spotify</a>
-  </div>
-
-  <div class="gallery-item">
-    <a href="https://i.postimg.cc/nCM1CHpr/ART-153.jpg" class="glightbox" data-gallery="felipe" data-title="ART 153">
-      <img src="https://i.postimg.cc/nCM1CHpr/ART-153.jpg" alt="ART 153" />
-    </a>
-    <h3>ART 153</h3>
-    <a href="https://felipedevicente.lojaintegrada.com.br/obra-de-arte-art-153" target="_blank" class="store-link">View in store</a>
-    <a href="https://open.spotify.com/track/57Ulv9j5OdcwKfNPS5wmUF" target="_blank" class="spotify-link">Listen on Spotify</a>
-  </div>
-
-  <div class="gallery-item">
-    <a href="https://i.postimg.cc/RqSdx7Yc/ART-154.jpg" class="glightbox" data-gallery="felipe" data-title="ART 154">
-      <img src="https://i.postimg.cc/RqSdx7Yc/ART-154.jpg" alt="ART 154" />
-    </a>
-    <h3>ART 154</h3>
-    <a href="https://felipedevicente.lojaintegrada.com.br/obra-de-arte-art-154" target="_blank" class="store-link">View in store</a>
-    <a href="https://open.spotify.com/track/07I4x6u14o5wlWeA7mlQ33" target="_blank" class="spotify-link">Listen on Spotify</a>
-  </div>
-
-  <div class="gallery-item">
-    <a href="https://i.postimg.cc/xc73mW1R/ART-155.jpg" class="glightbox" data-gallery="felipe" data-title="ART 155">
-      <img src="https://i.postimg.cc/xc73mW1R/ART-155.jpg" alt="ART 155" />
-    </a>
-    <h3>ART 155</h3>
-    <a href="https://felipedevicente.lojaintegrada.com.br/obra-de-arte-art-155" target="_blank" class="store-link">View in store</a>
-    <a href="https://open.spotify.com/track/0B0bxsbomrPwoJH7w2Ky7o" target="_blank" class="spotify-link">Listen on Spotify</a>
-  </div>
-
-  <div class="gallery-item">
-    <a href="https://i.postimg.cc/V5KRfSy2/ART-172.jpg" class="glightbox" data-gallery="felipe" data-title="ART 172">
-      <img src="https://i.postimg.cc/V5KRfSy2/ART-172.jpg" alt="ART 172" />
-    </a>
-    <h3>ART 172</h3>
-    <a href="https://felipedevicente.lojaintegrada.com.br/obra-de-arte-art-172" target="_blank" class="store-link">View in store</a>
-    <a href="https://open.spotify.com/track/0e0oVvZEimSmxIk1cPs5fq" target="_blank" class="spotify-link">Listen on Spotify</a>
-  </div>
-
-  <div class="gallery-item">
-    <a href="https://i.postimg.cc/jW6HG2Qg/ART-173.jpg" class="glightbox" data-gallery="felipe" data-title="ART 173">
-      <img src="https://i.postimg.cc/jW6HG2Qg/ART-173.jpg" alt="ART 173" />
-    </a>
-    <h3>ART 173</h3>
-    <a href="https://felipedevicente.lojaintegrada.com.br/obra-de-arte-art-173" target="_blank" class="store-link">View in store</a>
-    <a href="https://open.spotify.com/track/6wTxkhLFa9nMlJLec5NTNZ" target="_blank" class="spotify-link">Listen on Spotify</a>
-  </div>
-
-  <div class="gallery-item">
-    <a href="https://i.postimg.cc/061GWDmK/ART-174.jpg" class="glightbox" data-gallery="felipe" data-title="ART 174">
-      <img src="https://i.postimg.cc/061GWDmK/ART-174.jpg" alt="ART 174" />
-    </a>
-    <h3>ART 174</h3>
-    <a href="https://felipedevicente.lojaintegrada.com.br/obra-de-arte-art-174" target="_blank" class="store-link">View in store</a>
-    <a href="https://open.spotify.com/track/3Lt3jZWINViUuPWY2daypN" target="_blank" class="spotify-link">Listen on Spotify</a>
-  </div>
-
- <div class="gallery-item">
-  <a href="https://i.postimg.cc/752MnmCy/Self-Portrait.jpg" class="glightbox" data-gallery="felipe" data-title="Self-Portrait">
-    <img src="https://i.postimg.cc/752MnmCy/Self-Portrait.jpg" alt="Self-Portrait" />
-  </a>
-  <h3>Self-Portrait</h3>
-  <a href="https://felipedevicente.lojaintegrada.com.br/obra-de-arte-self-portrait" target="_blank" class="store-link">View in store</a>
-  <a href="https://open.spotify.com/album/3Ryk0ACkKZb3XmLEGVz2Kk" target="_blank" class="spotify-link">Listen to the full album</a>
-</div>
+  <footer>
+    <p>
+      <a href="https://felipedevicente.lojaintegrada.com.br/" target="_blank">Store</a> |
+      <a href="https://open.spotify.com/artist/3QwD6yxGGCiWzJFHHfTz3m" target="_blank">Spotify</a> |
+      <a href="https://www.instagram.com/felipedevicente" target="_blank">Instagram</a> |
+      <a href="https://linkfly.to/felipedevicente" target="_blank">LinkFly</a> |
+      <a href="mailto:felipedevicente88@hotmail.com">Contact</a>
+    </p>
+    <p>© Felipe De Vicente – All rights reserved</p>
+  </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
   <script>
@@ -161,8 +222,9 @@
       touchNavigation: true,
       loop: true,
       zoomable: true,
+      width: '90%',
+      height: 'auto',
     });
   </script>
-
 </body>
 </html>
