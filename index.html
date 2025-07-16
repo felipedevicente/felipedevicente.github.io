@@ -21,7 +21,7 @@
       font-size: 2.8em;
     }
     header p {
-      margin: 5px 0 0;
+      margin: 5px 0 20px;
       font-style: italic;
       color: #555;
     }
@@ -36,36 +36,50 @@
     .gallery {
       display: flex;
       flex-wrap: wrap;
-      gap: 15px;
+      gap: 20px;
       justify-content: center;
     }
-    .gallery a {
-      display: block;
+    .art-card {
       width: 180px;
-      border: 1px solid #ddd;
-      box-shadow: 2px 2px 6px rgba(0,0,0,0.1);
-      border-radius: 5px;
-      overflow: hidden;
       background: white;
+      border-radius: 6px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      overflow: hidden;
+      text-align: center;
       transition: transform 0.2s ease;
-      text-decoration: none;
     }
-    .gallery a:hover {
+    .art-card:hover {
       transform: scale(1.05);
-      box-shadow: 4px 4px 12px rgba(0,0,0,0.2);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
     }
-    .gallery img {
+    .art-card img {
       width: 100%;
       display: block;
+      cursor: pointer;
       height: auto;
     }
     .art-title {
-      padding: 8px 10px;
       font-weight: bold;
+      margin: 8px 0 4px 0;
       font-size: 1em;
       color: #222;
-      text-align: center;
       user-select: none;
+    }
+    .links-container {
+      margin-bottom: 10px;
+      font-size: 0.9em;
+      color: #444;
+      display: flex;
+      flex-direction: column;
+      gap: 3px;
+    }
+    .links-container a {
+      color: #0066cc;
+      text-decoration: none;
+      word-break: break-word;
+    }
+    .links-container a:hover {
+      text-decoration: underline;
     }
     footer {
       margin-top: 50px;
@@ -74,6 +88,15 @@
       color: #555;
       border-top: 1px solid #ddd;
       padding-top: 15px;
+    }
+    footer a {
+      color: #0066cc;
+      text-decoration: none;
+      margin: 0 8px;
+      font-weight: bold;
+    }
+    footer a:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
@@ -88,60 +111,136 @@
     <h2>Selected Artworks</h2>
     <div class="gallery">
 
-      <a href="https://i.postimg.cc/Vr1R6nkP/ART-131.jpg" class="glightbox" data-gallery="artworks" data-title="">
-        <img src="https://i.postimg.cc/Vr1R6nkP/ART-131.jpg" alt="ART 131" />
+      <!-- ART 131 -->
+      <div class="art-card">
+        <a href="https://i.postimg.cc/Vr1R6nkP/ART-131.jpg" class="glightbox" data-gallery="artworks" data-title="">
+          <img src="https://i.postimg.cc/Vr1R6nkP/ART-131.jpg" alt="ART 131" />
+        </a>
         <div class="art-title">ART 131</div>
-      </a>
+        <div class="links-container">
+          <a href="https://felipedevicente.lojaintegrada.com.br/obra-de-arte-art-131" target="_blank" rel="noopener noreferrer">View in Store</a>
+          <a href="https://open.spotify.com/track/7BDCnmb5qs7rvLnFBY0ofz" target="_blank" rel="noopener noreferrer">Listen on Spotify</a>
+        </div>
+      </div>
 
-      <a href="https://i.postimg.cc/xkL5ntYP/ART-134.jpg" class="glightbox" data-gallery="artworks" data-title="">
-        <img src="https://i.postimg.cc/xkL5ntYP/ART-134.jpg" alt="ART 134" />
+      <!-- ART 134 -->
+      <div class="art-card">
+        <a href="https://i.postimg.cc/xkL5ntYP/ART-134.jpg" class="glightbox" data-gallery="artworks" data-title="">
+          <img src="https://i.postimg.cc/xkL5ntYP/ART-134.jpg" alt="ART 134" />
+        </a>
         <div class="art-title">ART 134</div>
-      </a>
+        <div class="links-container">
+          <a href="https://felipedevicente.lojaintegrada.com.br/obra-de-arte-art-134" target="_blank" rel="noopener noreferrer">View in Store</a>
+          <a href="https://open.spotify.com/track/3ybOwTSfb6sZ8ldt0auC9O" target="_blank" rel="noopener noreferrer">Listen on Spotify</a>
+        </div>
+      </div>
 
-      <a href="https://i.postimg.cc/kRgvNCSj/ART-136.jpg" class="glightbox" data-gallery="artworks" data-title="">
-        <img src="https://i.postimg.cc/kRgvNCSj/ART-136.jpg" alt="ART 136" />
+      <!-- ART 136 -->
+      <div class="art-card">
+        <a href="https://i.postimg.cc/kRgvNCSj/ART-136.jpg" class="glightbox" data-gallery="artworks" data-title="">
+          <img src="https://i.postimg.cc/kRgvNCSj/ART-136.jpg" alt="ART 136" />
+        </a>
         <div class="art-title">ART 136</div>
-      </a>
+        <div class="links-container">
+          <a href="https://felipedevicente.lojaintegrada.com.br/obra-de-arte-art-136" target="_blank" rel="noopener noreferrer">View in Store</a>
+          <a href="https://open.spotify.com/track/0cA0wYxheiBkEJAdAzaNSS" target="_blank" rel="noopener noreferrer">Listen on Spotify</a>
+        </div>
+      </div>
 
-      <a href="https://i.postimg.cc/qhLGCqNh/ART-146.jpg" class="glightbox" data-gallery="artworks" data-title="">
-        <img src="https://i.postimg.cc/qhLGCqNh/ART-146.jpg" alt="ART 146" />
+      <!-- ART 146 -->
+      <div class="art-card">
+        <a href="https://i.postimg.cc/qhLGCqNh/ART-146.jpg" class="glightbox" data-gallery="artworks" data-title="">
+          <img src="https://i.postimg.cc/qhLGCqNh/ART-146.jpg" alt="ART 146" />
+        </a>
         <div class="art-title">ART 146</div>
-      </a>
+        <div class="links-container">
+          <a href="https://felipedevicente.lojaintegrada.com.br/obra-de-arte-art-146" target="_blank" rel="noopener noreferrer">View in Store</a>
+          <a href="https://open.spotify.com/track/1E882GAeT5L78lbth6DoFm" target="_blank" rel="noopener noreferrer">Listen on Spotify</a>
+        </div>
+      </div>
 
-      <a href="https://i.postimg.cc/nCM1CHpr/ART-153.jpg" class="glightbox" data-gallery="artworks" data-title="">
-        <img src="https://i.postimg.cc/nCM1CHpr/ART-153.jpg" alt="ART 153" />
+      <!-- ART 153 -->
+      <div class="art-card">
+        <a href="https://i.postimg.cc/nCM1CHpr/ART-153.jpg" class="glightbox" data-gallery="artworks" data-title="">
+          <img src="https://i.postimg.cc/nCM1CHpr/ART-153.jpg" alt="ART 153" />
+        </a>
         <div class="art-title">ART 153</div>
-      </a>
+        <div class="links-container">
+          <a href="https://felipedevicente.lojaintegrada.com.br/obra-de-arte-art-153" target="_blank" rel="noopener noreferrer">View in Store</a>
+          <a href="https://open.spotify.com/track/57Ulv9j5OdcwKfNPS5wmUF" target="_blank" rel="noopener noreferrer">Listen on Spotify</a>
+        </div>
+      </div>
 
-      <a href="https://i.postimg.cc/RqSdx7Yc/ART-154.jpg" class="glightbox" data-gallery="artworks" data-title="">
-        <img src="https://i.postimg.cc/RqSdx7Yc/ART-154.jpg" alt="ART 154" />
+      <!-- ART 154 -->
+      <div class="art-card">
+        <a href="https://i.postimg.cc/RqSdx7Yc/ART-154.jpg" class="glightbox" data-gallery="artworks" data-title="">
+          <img src="https://i.postimg.cc/RqSdx7Yc/ART-154.jpg" alt="ART 154" />
+        </a>
         <div class="art-title">ART 154</div>
-      </a>
+        <div class="links-container">
+          <a href="https://felipedevicente.lojaintegrada.com.br/obra-de-arte-art-154" target="_blank" rel="noopener noreferrer">View in Store</a>
+          <a href="https://open.spotify.com/track/07I4x6u14o5wlWeA7mlQ33" target="_blank" rel="noopener noreferrer">Listen on Spotify</a>
+        </div>
+      </div>
 
-      <a href="https://i.postimg.cc/xc73mW1R/ART-155.jpg" class="glightbox" data-gallery="artworks" data-title="">
-        <img src="https://i.postimg.cc/xc73mW1R/ART-155.jpg" alt="ART 155" />
+      <!-- ART 155 -->
+      <div class="art-card">
+        <a href="https://i.postimg.cc/xc73mW1R/ART-155.jpg" class="glightbox" data-gallery="artworks" data-title="">
+          <img src="https://i.postimg.cc/xc73mW1R/ART-155.jpg" alt="ART 155" />
+        </a>
         <div class="art-title">ART 155</div>
-      </a>
+        <div class="links-container">
+          <a href="https://felipedevicente.lojaintegrada.com.br/obra-de-arte-art-155" target="_blank" rel="noopener noreferrer">View in Store</a>
+          <a href="https://open.spotify.com/track/0B0bxsbomrPwoJH7w2Ky7o" target="_blank" rel="noopener noreferrer">Listen on Spotify</a>
+        </div>
+      </div>
 
-      <a href="https://i.postimg.cc/V5KRfSy2/ART-172.jpg" class="glightbox" data-gallery="artworks" data-title="">
-        <img src="https://i.postimg.cc/V5KRfSy2/ART-172.jpg" alt="ART 172" />
+      <!-- ART 172 -->
+      <div class="art-card">
+        <a href="https://i.postimg.cc/V5KRfSy2/ART-172.jpg" class="glightbox" data-gallery="artworks" data-title="">
+          <img src="https://i.postimg.cc/V5KRfSy2/ART-172.jpg" alt="ART 172" />
+        </a>
         <div class="art-title">ART 172</div>
-      </a>
+        <div class="links-container">
+          <a href="https://felipedevicente.lojaintegrada.com.br/obra-de-arte-art-172" target="_blank" rel="noopener noreferrer">View in Store</a>
+          <a href="https://open.spotify.com/track/0e0oVvZEimSmxIk1cPs5fq" target="_blank" rel="noopener noreferrer">Listen on Spotify</a>
+        </div>
+      </div>
 
-      <a href="https://i.postimg.cc/jW6HG2Qg/ART-173.jpg" class="glightbox" data-gallery="artworks" data-title="">
-        <img src="https://i.postimg.cc/jW6HG2Qg/ART-173.jpg" alt="ART 173" />
+      <!-- ART 173 -->
+      <div class="art-card">
+        <a href="https://i.postimg.cc/jW6HG2Qg/ART-173.jpg" class="glightbox" data-gallery="artworks" data-title="">
+          <img src="https://i.postimg.cc/jW6HG2Qg/ART-173.jpg" alt="ART 173" />
+        </a>
         <div class="art-title">ART 173</div>
-      </a>
+        <div class="links-container">
+          <a href="https://felipedevicente.lojaintegrada.com.br/obra-de-arte-art-173" target="_blank" rel="noopener noreferrer">View in Store</a>
+          <a href="https://open.spotify.com/track/6wTxkhLFa9nMlJLec5NTNZ" target="_blank" rel="noopener noreferrer">Listen on Spotify</a>
+        </div>
+      </div>
 
-      <a href="https://i.postimg.cc/061GWDmK/ART-174.jpg" class="glightbox" data-gallery="artworks" data-title="">
-        <img src="https://i.postimg.cc/061GWDmK/ART-174.jpg" alt="ART 174" />
+      <!-- ART 174 -->
+      <div class="art-card">
+        <a href="https://i.postimg.cc/061GWDmK/ART-174.jpg" class="glightbox" data-gallery="artworks" data-title="">
+          <img src="https://i.postimg.cc/061GWDmK/ART-174.jpg" alt="ART 174" />
+        </a>
         <div class="art-title">ART 174</div>
-      </a>
+        <div class="links-container">
+          <a href="https://felipedevicente.lojaintegrada.com.br/obra-de-arte-art-174" target="_blank" rel="noopener noreferrer">View in Store</a>
+          <a href="https://open.spotify.com/track/3Lt3jZWINViUuPWY2daypN" target="_blank" rel="noopener noreferrer">Listen on Spotify</a>
+        </div>
+      </div>
 
     </div>
   </section>
 
   <footer>
+    <a href="https://instagram.com/felipedevicente" target="_blank" rel="noopener noreferrer">Instagram</a> |
+    <a href="https://open.spotify.com/artist/your-artist-id" target="_blank" rel="noopener noreferrer">Spotify</a> |
+    <a href="https://felipedevicente.lojaintegrada.com.br" target="_blank" rel="noopener noreferrer">Loja</a> |
+    <a href="https://linkfly.to/felipedevicente" target="_blank" rel="noopener noreferrer">LinkFly</a> |
+    <a href="mailto:felipedevicente88@hotmail.com">E-mail</a>
+    <br />
     © Felipe De Vicente – All rights reserved
   </footer>
 
@@ -153,14 +252,13 @@
       loop: true,
       zoomable: true,
       draggable: true,
-      // Remove title/caption to show only the image
+      // Remove titles/captions for pure image view
       plyr: {
         config: {
           controls: []
         }
       },
       beforeSlideLoad: (slide) => {
-        // Remove captions/titles before slide loads
         slide.setCaption('');
       }
     });
