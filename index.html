@@ -12,20 +12,17 @@
       background: #f9f9f9;
       color: #333;
     }
-
     header {
       background: #222;
       color: #eee;
       text-align: center;
       padding: 2rem 1rem;
     }
-
     header h1 {
       margin: 0 0 0.5rem 0;
       font-weight: 700;
       font-size: 2.5rem;
     }
-
     header p {
       margin: 0;
       font-weight: 400;
@@ -33,36 +30,62 @@
       font-style: italic;
       color: #ccc;
     }
-
-    nav {
-      background: #222;
-      padding: 0.8rem 0;
-      text-align: center;
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-    }
-
-    nav a {
-      color: #ccc;
-      margin: 0 0.8rem;
-      text-decoration: none;
-      font-weight: 500;
-    }
-
-    nav a:hover {
-      text-decoration: underline;
-    }
-
-    main.about {
-      max-width: 700px;
+    main {
+      max-width: 960px;
       margin: 2rem auto;
       padding: 0 1rem;
-      font-size: 1rem;
-      line-height: 1.6;
-      text-align: justify;
     }
-
+    h2 {
+      text-align: center;
+      margin-bottom: 1.5rem;
+      font-weight: 600;
+      font-size: 1.8rem;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+      gap: 1.6rem;
+    }
+    .art-card {
+      background: white;
+      box-shadow: 0 4px 12px rgb(0 0 0 / 0.1);
+      border-radius: 8px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 1rem;
+    }
+    .art-card img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: transform 0.2s ease;
+    }
+    .art-card img:hover {
+      transform: scale(1.05);
+    }
+    .art-title {
+      font-weight: 600;
+      margin: 1rem 0 0.6rem 0;
+      font-size: 1.1rem;
+      color: #222;
+    }
+    .links-container a {
+      display: inline-block;
+      margin: 0 0.6rem 0.4rem 0.6rem;
+      text-decoration: none;
+      color: #0077cc;
+      font-weight: 500;
+      font-size: 0.9rem;
+      border-bottom: 1px solid transparent;
+      transition: border-color 0.2s ease;
+    }
+    .links-container a:hover {
+      border-bottom: 1px solid #0077cc;
+    }
     footer {
       margin-top: 3rem;
       padding: 1rem 0;
@@ -71,18 +94,16 @@
       text-align: center;
       font-size: 0.9rem;
     }
-
     footer a {
       color: #ccc;
       margin: 0 0.6rem;
       text-decoration: none;
       font-weight: 500;
     }
-
     footer a:hover {
       text-decoration: underline;
     }
-  </style>
+  </style>  
 </head>
 <body>
   <header>
@@ -99,7 +120,105 @@
   background: #222;      /* mesma cor do footer */
   color: #eee;           /* mesma cor do texto do footer */
   padding: 1rem 0;
-  text-align: center;
+  text-<style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0; padding: 0;
+      background: #f9f9f9;
+      color: #333;
+    }
+    header {
+      background: #222;
+      color: #eee;
+      text-align: center;
+      padding: 2rem 1rem;
+    }
+    header h1 {
+      margin: 0 0 0.5rem 0;
+      font-weight: 700;
+      font-size: 2.5rem;
+    }
+    header p {
+      margin: 0;
+      font-weight: 400;
+      font-size: 1.2rem;
+      font-style: italic;
+      color: #ccc;
+    }
+    main {
+      max-width: 960px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+    h2 {
+      text-align: center;
+      margin-bottom: 1.5rem;
+      font-weight: 600;
+      font-size: 1.8rem;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+      gap: 1.6rem;
+    }
+    .art-card {
+      background: white;
+      box-shadow: 0 4px 12px rgb(0 0 0 / 0.1);
+      border-radius: 8px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 1rem;
+    }
+    .art-card img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: transform 0.2s ease;
+    }
+    .art-card img:hover {
+      transform: scale(1.05);
+    }
+    .art-title {
+      font-weight: 600;
+      margin: 1rem 0 0.6rem 0;
+      font-size: 1.1rem;
+      color: #222;
+    }
+    .links-container a {
+      display: inline-block;
+      margin: 0 0.6rem 0.4rem 0.6rem;
+      text-decoration: none;
+      color: #0077cc;
+      font-weight: 500;
+      font-size: 0.9rem;
+      border-bottom: 1px solid transparent;
+      transition: border-color 0.2s ease;
+    }
+    .links-container a:hover {
+      border-bottom: 1px solid #0077cc;
+    }
+    footer {
+      margin-top: 3rem;
+      padding: 1rem 0;
+      background: #222;
+      color: #eee;
+      text-align: center;
+      font-size: 0.9rem;
+    }
+    footer a {
+      color: #ccc;
+      margin: 0 0.6rem;
+      text-decoration: none;
+      font-weight: 500;
+    }
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>align: center;
 }
 
 header h1 {
